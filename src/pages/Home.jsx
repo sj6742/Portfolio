@@ -251,7 +251,7 @@ return (
             className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full h-screen"
         >
             {/* Wavy SVG Background - Responsive */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 mb-10">
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
                 <svg className="absolute bottom-0 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
                         fill="rgba(255, 255, 255, 0.2)"
@@ -376,7 +376,7 @@ return (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         >
-        <div className="max-w-3xl mx-auto text-center mb-16 mt-16">
+        <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-extrabold mb-4">About Me</h2>
             <div className="w-20 h-1 bg-white mx-auto mb-4"></div>
             <p className="text-lg text-gray-200">
