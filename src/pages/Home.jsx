@@ -246,12 +246,12 @@ return (
 </header>
 
       {/* Hero Section */}
-      <section
+    <section
             id="home"
-            className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
+            className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full"
         >
             {/* Wavy SVG Background - Responsive */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 mb-10">
                 <svg className="absolute bottom-0 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
                         fill="rgba(255, 255, 255, 0.2)"
