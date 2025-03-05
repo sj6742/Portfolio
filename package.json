@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sj6742.github.io/portfolio/",
+  "homepage": "https://sj6742.github.io/Portfolio/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
