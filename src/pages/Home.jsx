@@ -248,7 +248,7 @@ return (
       {/* Hero Section */}
     <section
             id="home"
-            className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full"
+            className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full h-screen"
         >
             {/* Wavy SVG Background - Responsive */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 mb-10">
