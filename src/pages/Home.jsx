@@ -376,7 +376,7 @@ return (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         >
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-16 mt-16">
             <h2 className="text-4xl font-extrabold mb-4">About Me</h2>
             <div className="w-20 h-1 bg-white mx-auto mb-4"></div>
             <p className="text-lg text-gray-200">
