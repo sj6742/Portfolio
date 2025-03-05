@@ -12,7 +12,6 @@ import logo1 from "../assets/project-1.jpg";
 import logo2 from "../assets/project-2.jpg";
 import logo3 from "../assets/project-3.jpg";
 
-import Typical from "react-typical";
 
 
 const projects = [
@@ -246,64 +245,62 @@ return (
 </header>
 
       {/* Hero Section */}
-    <section
-            id="home"
-            className="relative pt-40 pb-40 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white overflow-hidden"
+      <section
+    id="home"
+    className="relative pt-40 pb-40 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white overflow-hidden"
+>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+        {/* Left Side Content */}
+        <motion.div
+            className="text-center md:text-left"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
         >
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
-                {/* Left Side Content */}
-                <motion.div
-                    className="text-center md:text-left"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                >
-                    <motion.h1
-                        className="text-5xl md:text-7xl font-extrabold mb-6"
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, ease: "easeOut", type: "spring", stiffness: 100 }}
-                    >
-                        Hello, I'm <br />
-                        <span className="text-yellow-300">
-                            <Typical steps={["Sujal Joshi", 2000, "A Developer", 2000]} loop={Infinity} wrapper="span" />
-                        </span>
-                    </motion.h1>
-                    <motion.p
-                        className="text-xl md:text-2xl mb-8"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.3 }}
-                    >
-                        Full Stack Developer specializing in modern web technologies.
-                    </motion.p>
-                    
-                    {/* Buttons */}
-                    <motion.div
-                        className="flex gap-6"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.5, type: "spring", stiffness: 120 }}
-                    >
-                        <a href="#contact" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium text-lg py-3 px-8 rounded-md transition-colors shadow-lg">Get in Touch</a>
-                        <a href="#projects" className="bg-white hover:bg-gray-200 text-gray-900 font-medium text-lg py-3 px-8 rounded-md transition-colors shadow-lg">View Projects</a>
-                    </motion.div>
-                    
-                    {/* Social Icons */}
-                    <motion.div className="mt-10 flex space-x-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.7 }}>
-                        <motion.a href="https://github.com/sj6742" target="_blank" className="text-white hover:text-yellow-300 transition-colors" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                            <FaGithub className="h-8 w-8" />
-                        </motion.a>
-                        <motion.a href="https://linkedin.com" target="_blank" className="text-white hover:text-yellow-300 transition-colors" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                            <FaLinkedin className="h-8 w-8" />
-                        </motion.a>
-                        <motion.a href="https://twitter.com" target="_blank" className="text-white hover:text-yellow-300 transition-colors" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                            <FaTwitter className="h-8 w-8" />
-                        </motion.a>
-                    </motion.div>
-                </motion.div>
-            </div>
-        </section>
+            <motion.h1
+                className="text-5xl md:text-7xl font-extrabold mb-6"
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut", type: "spring", stiffness: 100 }}
+            >
+                Hello, I'm <br />
+                <span className="text-yellow-300">Sujal Joshi</span>
+            </motion.h1>
+            <motion.p
+                className="text-xl md:text-2xl mb-8"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.3 }}
+            >
+                Full Stack Developer specializing in modern web technologies.
+            </motion.p>
+            
+            {/* Buttons */}
+            <motion.div
+                className="flex gap-6"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.5, type: "spring", stiffness: 120 }}
+            >
+                <a href="#contact" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium text-lg py-3 px-8 rounded-md transition-colors shadow-lg">Get in Touch</a>
+                <a href="#projects" className="bg-white hover:bg-gray-200 text-gray-900 font-medium text-lg py-3 px-8 rounded-md transition-colors shadow-lg">View Projects</a>
+            </motion.div>
+            
+            {/* Social Icons */}
+            <motion.div className="mt-10 flex space-x-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.7 }}>
+                <motion.a href="https://github.com/sj6742" target="_blank" className="text-white hover:text-yellow-300 transition-colors" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+                    <FaGithub className="h-8 w-8" />
+                </motion.a>
+                <motion.a href="https://linkedin.com" target="_blank" className="text-white hover:text-yellow-300 transition-colors" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+                    <FaLinkedin className="h-8 w-8" />
+                </motion.a>
+                <motion.a href="https://twitter.com" target="_blank" className="text-white hover:text-yellow-300 transition-colors" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+                    <FaTwitter className="h-8 w-8" />
+                </motion.a>
+            </motion.div>
+        </motion.div>
+    </div>
+</section>
       {/* About Section */}
 
     <section
