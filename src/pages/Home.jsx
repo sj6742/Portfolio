@@ -135,9 +135,6 @@ const onSubmit = async (event) => {
     alert(res.message)
     }
 }
-
-
-
 return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -235,7 +232,7 @@ return (
                     className={`block px-4 py-3 rounded-lg text-lg font-semibold transition-all duration-300 ease-in-out ${
                         activeSection === section
                             ? "bg-gradient-to-r from-green-400 to-teal-500 text-white shadow-md"
-                            : "text-gray-800 hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500 hover:text-white hover:shadow-md transform hover:scale-105"
+                            : "hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500 hover:text-white hover:shadow-md transform hover:scale-105"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                 >
