@@ -12,7 +12,10 @@ Welcome to my Portfolio! This project showcases my skills, experience, and proje
 
 ## 📸 Preview
 
-For Live Demo Follow This Link:- https://portfolio-sj6742s-projects.vercel.app/ 
+For Live Demo Follow This Link:- https://portfolio-sj6742s-projects.vercel.app/
+
+
+
 ![image](https://github.com/user-attachments/assets/92927ffb-8d48-45ca-a464-56dc7288be26)
 ![image](https://github.com/user-attachments/assets/1d5c4bca-e5f2-4249-afcd-9cd46c463ec5)
 
@@ -37,24 +40,20 @@ For Live Demo Follow This Link:- https://portfolio-sj6742s-projects.vercel.app/
 ```
 
 ## 🚀 Installation & Usage
-
-1. Clone the repository:
-   ```sh
-  https://github.com/sj6742/Portfolio
-   ```
-2. Navigate to the project directory:
+   
+1. Navigate to the project directory:
    ```sh
    cd portfolio
    ```
-3. Install dependencies:
+2. Install dependencies:
    ```sh
    npm install
    ```
-4. Start the development server:
+3. Start the development server:
    ```sh
    npm start
    ```
-5. Open your browser and visit `http://localhost:3000`
+4. Open your browser and visit `http://localhost:3000`
 
 ## 📌 Customization
 
