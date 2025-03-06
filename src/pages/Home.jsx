@@ -5,7 +5,7 @@ FaPhone,
 FaMapMarkerAlt,
 FaGithub,
 FaLinkedin,
-FaTwitter,
+FaInstagram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo1 from "../assets/project-1.jpg";
@@ -36,8 +36,8 @@ const projects = [
     image: logo3,
     category: "Responsive",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
-    demoLink: "#",
-    sourceCode: "#",
+    demoLink: "https://github.com/sj6742/Imgify",
+    sourceCode: "https://github.com/sj6742",
 },
 {
     id: 3,
@@ -47,8 +47,8 @@ const projects = [
     image: logo2,
     category: "Web App",
     techStack: ["HTML", "CSS", "JS"],
-    demoLink: "#",
-    sourceCode: "#",
+    demoLink: "https://github.com/sj6742",
+    sourceCode: "https://github.com/sj6742",
 },
 ];
 
@@ -135,6 +135,7 @@ const onSubmit = async (event) => {
     alert(res.message)
     }
 }
+
 
 
 return (
@@ -343,7 +344,7 @@ return (
                             <FaGithub className="h-8 w-8" />
                         </motion.a>
                         <motion.a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/sujal-joshi-bba621290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                             target="_blank"
                             className="text-white hover:text-yellow-300 transition-colors"
                             whileHover={{ scale: 1.2, rotate: 10 }}
@@ -352,13 +353,13 @@ return (
                             <FaLinkedin className="h-8 w-8" />
                         </motion.a>
                         <motion.a
-                            href="https://twitter.com"
+                            href="https://www.instagram.com/_s.j.03_?igsh=a3g3d2dhOG1jNzhn&utm_source=qr"
                             target="_blank"
                             className="text-white hover:text-yellow-300 transition-colors"
                             whileHover={{ scale: 1.2, rotate: 10 }}
                             whileTap={{ scale: 0.9 }}
                         >
-                            <FaTwitter className="h-8 w-8" />
+                            <FaInstagram className="h-8 w-8" />
                         </motion.a>
                     </motion.div>
                 </motion.div>
@@ -708,11 +709,11 @@ return (
                     {project.title}
                 </motion.h3>
                 <p className="text-gray-600 mb-3">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-3">
+                <div className="flex flex-wrap gap-2 mb-3 ">
                     {project.techStack.map((tech, i) => (
                     <motion.span
                         key={i}
-                        className="px-3 py-1 bg-gray-200 text-gray-800 text-xs font-medium rounded"
+                        className="px-3 py-1 bg-gray-800 text-gray-200 text-xs font-medium rounded"
                         whileHover={{ scale: 1.1 }}
                     >
                         {tech}
@@ -807,11 +808,14 @@ return (
                         <h4 className="font-medium mb-3">Connect with me</h4>
                         <div className="flex space-x-4">
                             {[ 
-                                { href: "https://github.com/sj6742", icon: <FaGithub className="h-6 w-6" /> },
-                                { href: "#", icon: <FaLinkedin className="h-6 w-6" /> },
+                                { href: "https://github.com/sj6742" ,icon: <FaGithub className="h-6 w-6" /> },
+                                { href: "https://www.linkedin.com/in/sujal-joshi-bba621290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", icon: <FaLinkedin className="h-6 w-6" /> },
+                                { href: "https://www.instagram.com/_s.j.03_?igsh=a3g3d2dhOG1jNzhn&utm_source=qr", icon: <FaInstagram className="h-6 w-6" /> }
+
                             ].map((social, index) => (
                                 <motion.a
                                     key={index}
+                                    target="_blank"
                                     href={social.href}
                                     className="text-white hover:text-blue-200 transition-colors"
                                     whileHover={{ scale: 1.2, rotate: 10 }}
@@ -883,7 +887,6 @@ return (
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
         >
-            {/* Brand Name */}
             <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-3xl font-extrabold tracking-wide text-white">
                 Joshi Sujal
@@ -891,7 +894,6 @@ return (
             <p className="mt-2 text-gray-400 text-lg">Full Stack Developer</p>
             </div>
 
-            {/* Social Icons */}
             <motion.div
             className="flex space-x-6 mb-4 md:mb-0"
             initial={{ opacity: 0 }}
@@ -900,11 +902,12 @@ return (
             >
             {[
                 { icon: FaGithub, link: "https://github.com/sj6742 ", color: "hover:text-gray-300" },
-                { icon: FaLinkedin, link: "#", color: "hover:text-blue-400" },
-                { icon: FaEnvelope, link: "#", color: "hover:text-red-400" },
+                { icon: FaLinkedin, link: "https://www.linkedin.com/in/sujal-joshi-bba621290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", color: "hover:text-blue-400" },
+                { icon: FaInstagram, link: "https://www.instagram.com/_s.j.03_?igsh=a3g3d2dhOG1jNzhn&utm_source=qr",color: "hover:text-red-400" },
             ].map(({ icon: Icon, link, color }, index) => (
                 <motion.a
                 key={index}
+                target="_blank"
                 href={link}
                 className={`text-gray-400 ${color} transition-colors`}
                 whileHover={{ scale: 1.2, rotate: 5 }}
