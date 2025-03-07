@@ -249,24 +249,25 @@ return (
             className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full h-screen"
         >
             {/* Wavy SVG Background - Responsive */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-                <svg className="absolute bottom-0 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path
-                        fill="rgba(255, 255, 255, 0.2)"
-                        fillOpacity="1"
-                        d="M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-                    >
-                        <animate 
-                            attributeName="d"
-                            dur="6s"
-                            repeatCount="indefinite"
-                            values="
-                                M0,224L80,230C160,238,320,250,480,240C640,230,800,210,960,205C1120,200,1280,210,1360,220L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z;
-                                M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-                        />
-                    </path>
-                </svg>
-            </div>
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 sm:hidden">
+    <svg className="absolute bottom-0 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+            fill="rgba(255, 255, 255, 0.2)"
+            fillOpacity="1"
+            d="M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        >
+            <animate 
+                attributeName="d"
+                dur="6s"
+                repeatCount="indefinite"
+                values="
+                    M0,224L80,230C160,238,320,250,480,240C640,230,800,210,960,205C1120,200,1280,210,1360,220L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z;
+                    M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            />
+        </path>
+    </svg>
+</div>
+
 
             {/* Content */}
             <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
@@ -296,7 +297,7 @@ return (
                     >
                         <Typewriter
                             options={{
-                                strings: ["Full Stack Developer", "React Enthusiast", "JavaScript Lover"],
+                                strings: ["Full Stack Developer", "React Enthusiast", "Python Passionate"],
                                 autoStart: true,
                                 loop: true,
                             }}
@@ -362,8 +363,8 @@ return (
                 </motion.div>
             </div>
         </section>
-      {/* About Section */}
 
+      {/* About Section */}
     <section
         id="about"
         className="py-24 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white overflow-hidden"
@@ -572,6 +573,7 @@ return (
                 { name: "Node.js", percentage: 75 },
                 { name: "Express", percentage: 65 },
                 { name: "MongoDB", percentage: 75 },
+                { name: "Python", percentage: 60 },
                 ].map((skill) => (
                 <div key={skill.name}>
                     <div className="flex justify-between mb-1">
