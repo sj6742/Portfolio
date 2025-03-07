@@ -244,125 +244,125 @@ return (
 </header>
 
       {/* Hero Section */}
-    <section
-            id="home"
-            className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full h-screen"
-        >
-            {/* Wavy SVG Background - Responsive */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 sm:hidden">
-    <svg className="absolute bottom-0 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-            fill="rgba(255, 255, 255, 0.2)"
-            fillOpacity="1"
-            d="M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        >
-            <animate 
-                attributeName="d"
-                dur="6s"
-                repeatCount="indefinite"
-                values="
-                    M0,224L80,230C160,238,320,250,480,240C640,230,800,210,960,205C1120,200,1280,210,1360,220L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z;
-                    M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-            />
-        </path>
-    </svg>
-</div>
+      <section
+    id="home"
+    className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full h-screen"
+>
+    {/* Wavy SVG Background - Responsive */}
+    <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 sm:hidden">
+        <svg className="absolute bottom-0 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+                fill="rgba(255, 255, 255, 0.2)"
+                fillOpacity="1"
+                d="M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            >
+                <animate 
+                    attributeName="d"
+                    dur="6s"
+                    repeatCount="indefinite"
+                    values="
+                        M0,224L80,230C160,238,320,250,480,240C640,230,800,210,960,205C1120,200,1280,210,1360,220L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z;
+                        M0,224L80,218.7C160,213,320,203,480,202.7C640,203,800,213,960,218.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                />
+            </path>
+        </svg>
+    </div>
 
+    {/* Content */}
+    <div className="container relative mx-auto px-6 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+        {/* Left Side Content */}
+        <motion.div
+            className="text-center md:text-left z-10"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+        >
+            <motion.h1
+                className="text-6xl sm:text-5xl md:text-7xl font-extrabold mb-6"
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut", type: "spring", stiffness: 100 }}
+            >
+                Hello, I'm <br />
+                <span className="text-yellow-300 drop-shadow-lg">Sujal</span>
+            </motion.h1>
 
-            {/* Content */}
-            <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
-                {/* Left Side Content */}
-                <motion.div
-                    className="text-center md:text-left z-10"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+            {/* Dynamic Typing Effect */}
+            <motion.p
+                className="text-2xl sm:text-xl md:text-2xl mb-8"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.3 }}
+            >
+                <Typewriter
+                    options={{
+                        strings: ["Full Stack Developer", "React Enthusiast", "Python Passionate"],
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />
+            </motion.p>
+
+            {/* Buttons */}
+            <motion.div
+                className="flex flex-col sm:flex-row gap-6 items-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.5, type: "spring", stiffness: 120 }}
+            >
+                <a
+                    href="#contact"
+                    className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium text-lg py-4 px-10 sm:py-3 sm:px-8 rounded-md transition-transform hover:scale-105 shadow-lg"
                 >
-                    <motion.h1
-                        className="text-5xl md:text-7xl font-extrabold mb-6"
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, ease: "easeOut", type: "spring", stiffness: 100 }}
-                    >
-                        Hello, I'm <br />
-                        <span className="text-yellow-300 drop-shadow-lg">Sujal Joshi</span>
-                    </motion.h1>
+                    Get in Touch
+                </a>
+                <a
+                    href="#projects"
+                    className="bg-white hover:bg-gray-200 text-gray-900 font-medium text-lg py-4 px-10 sm:py-3 sm:px-8 rounded-md transition-transform hover:scale-105 shadow-lg"
+                >
+                    View Projects
+                </a>
+            </motion.div>
 
-                    {/* Dynamic Typing Effect */}
-                    <motion.p
-                        className="text-xl md:text-2xl mb-8"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.3 }}
-                    >
-                        <Typewriter
-                            options={{
-                                strings: ["Full Stack Developer", "React Enthusiast", "Python Passionate"],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
-                    </motion.p>
+            {/* Social Icons */}
+            <motion.div
+                className="mt-10 flex space-x-6 justify-center md:justify-start"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.7 }}
+            >
+                <motion.a
+                    href="https://github.com/sj6742"
+                    target="_blank"
+                    className="text-white hover:text-yellow-300 transition-colors"
+                    whileHover={{ scale: 1.2, rotate: 10 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    <FaGithub className="h-10 w-10 sm:h-8 sm:w-8" />
+                </motion.a>
+                <motion.a
+                    href="https://www.linkedin.com/in/sujal-joshi-bba621290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank"
+                    className="text-white hover:text-yellow-300 transition-colors"
+                    whileHover={{ scale: 1.2, rotate: 10 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    <FaLinkedin className="h-10 w-10 sm:h-8 sm:w-8" />
+                </motion.a>
+                <motion.a
+                    href="https://www.instagram.com/_s.j.03_?igsh=a3g3d2dhOG1jNzhn&utm_source=qr"
+                    target="_blank"
+                    className="text-white hover:text-yellow-300 transition-colors"
+                    whileHover={{ scale: 1.2, rotate: 10 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    <FaInstagram className="h-10 w-10 sm:h-8 sm:w-8" />
+                </motion.a>
+            </motion.div>
+        </motion.div>
+    </div>
+</section>
 
-                    {/* Buttons */}
-                    <motion.div
-                        className="flex flex-col sm:flex-row gap-6 items-center"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.5, type: "spring", stiffness: 120 }}
-                    >
-                        <a
-                            href="#contact"
-                            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium text-lg py-3 px-8 rounded-md transition-transform hover:scale-105 shadow-lg"
-                        >
-                            Get in Touch
-                        </a>
-                        <a
-                            href="#projects"
-                            className="bg-white hover:bg-gray-200 text-gray-900 font-medium text-lg py-3 px-8 rounded-md transition-transform hover:scale-105 shadow-lg"
-                        >
-                            View Projects
-                        </a>
-                    </motion.div>
-
-                    {/* Social Icons */}
-                    <motion.div
-                        className="mt-10 flex space-x-6 justify-center md:justify-start"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.7 }}
-                    >
-                        <motion.a
-                            href="https://github.com/sj6742"
-                            target="_blank"
-                            className="text-white hover:text-yellow-300 transition-colors"
-                            whileHover={{ scale: 1.2, rotate: 10 }}
-                            whileTap={{ scale: 0.9 }}
-                        >
-                            <FaGithub className="h-8 w-8" />
-                        </motion.a>
-                        <motion.a
-                            href="https://www.linkedin.com/in/sujal-joshi-bba621290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                            target="_blank"
-                            className="text-white hover:text-yellow-300 transition-colors"
-                            whileHover={{ scale: 1.2, rotate: 10 }}
-                            whileTap={{ scale: 0.9 }}
-                        >
-                            <FaLinkedin className="h-8 w-8" />
-                        </motion.a>
-                        <motion.a
-                            href="https://www.instagram.com/_s.j.03_?igsh=a3g3d2dhOG1jNzhn&utm_source=qr"
-                            target="_blank"
-                            className="text-white hover:text-yellow-300 transition-colors"
-                            whileHover={{ scale: 1.2, rotate: 10 }}
-                            whileTap={{ scale: 0.9 }}
-                        >
-                            <FaInstagram className="h-8 w-8" />
-                        </motion.a>
-                    </motion.div>
-                </motion.div>
-            </div>
-        </section>
 
       {/* About Section */}
     <section
@@ -570,8 +570,8 @@ return (
             </p>
             <div className="space-y-2">
                 {[
-                { name: "Node.js", percentage: 75 },
-                { name: "Express", percentage: 65 },
+                { name: "Node.js", percentage: 60 },
+                { name: "Express", percentage: 55 },
                 { name: "MongoDB", percentage: 75 },
                 { name: "Python", percentage: 60 },
                 ].map((skill) => (
@@ -622,7 +622,7 @@ return (
             </p>
             <div className="space-y-2">
                 {[
-                { name: "Git", percentage: 80 },
+                { name: "Git", percentage: 70 },
                 { name: "Docker", percentage: 50 },
                 { name: "AWS", percentage: 60 },
                 ].map((skill) => (
