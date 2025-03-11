@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import logo1 from "../assets/project-1.jpg";
 import logo2 from "../assets/project-2.jpg";
 import logo3 from "../assets/project-3.jpg";
+import logo4 from "../assets/snake.jpg";
 import Typewriter from "typewriter-effect";
 
 
@@ -49,6 +50,17 @@ const projects = [
     techStack: ["HTML", "CSS", "JS"],
     demoLink: "https://github.com/sj6742",
     sourceCode: "https://github.com/sj6742",
+},
+{
+    id: 4,
+    title: "Snake Water Gun Game",
+    description:
+    "The Snake Water Gun game is a simple two-player game, similar to Rock-Paper-Scissors. It is often played between a player and the computer.",
+    image: logo4,
+    category: "Responsive",
+    techStack: ["PYTHON"],
+    demoLink: "https://github.com/sj6742/Snake-Water-Gun-game",
+    sourceCode: "https://github.com/sj6742/Snake-Water-Gun-game",
 },
 ];
 
@@ -244,7 +256,7 @@ return (
 </header>
 
       {/* Hero Section */}
-      <section
+    <section
     id="home"
     className="relative pt-40 pb-40 text-white overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full h-screen"
 >
