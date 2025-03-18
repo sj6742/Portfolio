@@ -463,6 +463,29 @@ function Home() {
                   { label: "Email", value: "joshisujal85@gmail.com" },
                   { label: "Location", value: "Ahmedabad" },
                   { label: "Availability", value: "Full-time / Part-time" },
+                  {
+                    label: "Certificate",
+                    value: (
+                      <Link 
+                        to="/certificate" 
+                        className="inline-block bg-yellow-500 text-white px-6 py-2 rounded-md text-center hover:bg-yellow-600 transition-all duration-300 shadow-md"
+                      >
+                        📜 View Certificate
+                      </Link>
+                    ),
+                  },
+                  {
+                    label: "Work Experience",
+                    value: (
+                      <Link 
+                        to="/work" 
+                        className="inline-block bg-yellow-400 text-white px-6 py-2 rounded-md text-center hover:bg-yellow-500 transition-all duration-300 shadow-md"
+                      >
+                        💼 View Work Experience
+                      </Link>
+                    ),
+                  },
+                  
                 ].map((info, index) => (
                   <div key={index}>
                     <p className="text-white font-medium">{info.label}:</p>
