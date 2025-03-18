@@ -79,7 +79,7 @@ const projects = [
 
 {
     id: 7,
-    title: "The-Perfet-Guuss",
+    title: "The-Perfet-Guuss.",
     description:
     "A fun Python-based number guessing game that challenges players to find the perfect guess!",
     image: logo7,
