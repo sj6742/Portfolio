@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import logo1 from "../assets/project-1.jpg";
 import logo2 from "../assets/project-2.jpg";
 import logo3 from "../assets/project-3.jpg";
-
+import { Link } from 'react-router-dom';
 import Typewriter from "typewriter-effect";
 
 const projects = [
@@ -760,14 +760,13 @@ function Home() {
 
           {/* Call to Action */}
           <div className="flex justify-center mt-12">
-            <motion.a
-              href="/projects"
+            <motion.div
               whileHover={{ scale: 1.1, rotate: 2 }}
               whileTap={{ scale: 0.9 }}
               className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-pink-600 text-white font-medium py-3 px-8 rounded-md transition shadow-lg hover:shadow-xl"
             >
-              View All Projects
-            </motion.a>
+              <Link to="/projects">View All Projects</Link>
+            </motion.div>
           </div>
         </div>
       </section>
