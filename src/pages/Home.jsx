@@ -470,7 +470,6 @@ function Home() {
                   </div>
                 ))}
               </div>
-               
               <motion.a
                 href="/Sujal.CV.pdf"
                 download="Sujal_Joshi_Resume.pdf"
