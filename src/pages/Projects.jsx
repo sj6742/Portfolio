@@ -1,179 +1,151 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt } from "react-icons/fa";
+import logo7 from "../assets/perfect.jpg";
+import logo1 from "../assets/project-1.jpg";
+import logo2 from "../assets/project-2.jpg";
+import logo3 from "../assets/project-3.jpg";
+import logo5 from "../assets/Quize.jpg";
+import logo6 from "../assets/Resume.jpg";
+import logo4 from "../assets/snake.jpg";
+
+const projects = [
+  {
+    id: 1,
+    title: "Quick Chat",
+    description:
+    "A real-time chat application is a web or mobile-based platform that enables users to send and receive messages instantly. It is designed for seamless communication with minimal delays, allowing for interactive conversations between individuals or groups.",
+    image: logo1,
+    category: "Responsive",
+    techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+    demoLink: "https://quick-chat-p1nn.onrender.com",
+    sourceCode: "https://github.com/sj6742/Quick-Chat.git",
+},
+{
+    id: 2,
+    title: "Imagify",
+    description:
+    "A prompt-generated 3D image is a digital artwork created using AI models that interpret text descriptions to generate 3D-like visuals. These models use advanced algorithms to render depth, lighting, and perspective, producing realistic or stylized 3D effects based on the given input. This technology is widely used in game design, architecture, and creative arts. ",
+    image: logo3,
+    category: "Responsive",
+    techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+    demoLink: "https://github.com/sj6742/Imgify",
+    sourceCode: "https://github.com/sj6742",
+},
+{
+    id: 3,
+    title: "Pelican Bookstore",
+    description:
+    "BookStore is a modern online platform designed for book enthusiasts to explore, purchase, and review a vast collection of books across various genres. Whether you're a fan of fiction, non-fiction, fantasy, or self-development, BookStore offers an intuitive browsing experience with personalized recommendations and seamless navigation.",
+    image: logo2,
+    category: "Web App",
+    techStack: ["HTML", "CSS", "JS"],
+    demoLink: "https://github.com/sj6742",
+    sourceCode: "https://github.com/sj6742",
+},
+{
+    id: 4,
+    title: "Resume-Builder",
+    description:
+    "An intuitive React-based resume builder for creating professional resumes effortlessly.",
+    image: logo6,
+    category: "Responsive",
+    techStack: ["React.js,Tailwind CSS, HTML & CSS, JavaScript, JsPDF"],
+    demoLink: "resume-builder-two-theta.vercel.app",
+    sourceCode: "https://github.com/sj6742/Resume-Builder",
+},
+{
+    id: 5,
+    title: "Snake Water Gun Game",
+    description:
+    "The Snake Water Gun game is a simple two-player game, similar to Rock-Paper-Scissors. It is often played between a player and the computer.",
+    image: logo4,
+    category: "Responsive",
+    techStack: ["PYTHON"],
+    demoLink: "https://github.com/sj6742/Snake-Water-Gun-game",
+    sourceCode: "https://github.com/sj6742/Snake-Water-Gun-game",
+},
+{
+    id: 6,
+    title: "Python Quiz ",
+    description:
+    "A Python-based interactive quiz application that tests users' knowledge with multiple-choice questions and tracks their score.",
+    image: logo5,
+    category: "Responsive",
+    techStack: ["PYTHON"],
+    demoLink: "https://github.com/sj6742/Quiz",
+    sourceCode: "https://github.com/sj6742/Quiz",
+},
+
+{
+    id: 7,
+    title: "The-Perfet-Guuss",
+    description:
+    "A fun Python-based number guessing game that challenges players to find the perfect guess!",
+    image: logo7,
+    category: "Responsive",
+    techStack: ["PYTHON"],
+    demoLink: "https://github.com/sj6742/The-Perfet-Guuss",
+    sourceCode: "https://github.com/sj6742/The-Perfet-Guuss",
+},
+];
 
 const Projects = () => {
-const [isMenuOpen, setIsMenuOpen] = useState(false);
-const [activeSection, setActiveSection] = useState("home"); 
-
 return (
-    <>
-    <header className="fixed w-full bg-gradient-to-r from-blue-700 to-cyan-500 shadow-xl z-50 transition-all duration-500">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-            <a
-                href="/home"
-                className="text-3xl font-extrabold text-white transition-transform transform hover:scale-125 hover:text-pink-400 duration-500 ease-in-out drop-shadow-lg"
-            >
-                Joshi Sujal
-            </a>
-            </div>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8 bg-gradient-to-r p-4">
-            {[
-                { name: "Home", href: "#home" },
-                { name: "About", href: "#about" },
-                { name: "Skills", href: "#skills" },
-                { name: "Projects", href: "#projects" },
-                { name: "Contact", href: "#contact" },
-            ].map((item) => (
-                <a
-                key={item.name}
-                href={item.href}
-                className={`relative text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
-                    activeSection === item.href.slice(1)
-                    ? "text-white after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-yellow-400 after:scale-x-100 after:transition-transform"
-                    : "text-gray-200 hover:text-pink-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-yellow-300 after:scale-x-0 after:transition-transform hover:after:scale-x-100"
-                }`}
-                onClick={() => setActiveSection(item.href.slice(1))}
-                >
-                {item.name}
-                </a>
-            ))}
-            </nav>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-            <button
-                type="button"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-3 rounded-lg bg-gradient-to-r from-green-500 to-teal-500 text-white shadow-md transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-lg focus:outline-none"
-            >
-                <span className="sr-only">Open main menu</span>
-
-                {/* Hamburger Icon */}
-                <svg
-                className={`h-7 w-7 transition-transform duration-500 ease-in-out ${
-                    isMenuOpen ? "scale-0 rotate-180" : "scale-100 rotate-0"
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-                >
-                <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                />
-                </svg>
-
-                {/* Close Icon */}
-                <svg
-                className={`h-7 w-7 absolute transition-transform duration-500 ease-in-out ${
-                    isMenuOpen ? "scale-100 rotate-180" : "scale-0 rotate-0"
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-                >
-                <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                />
-                </svg>
-            </button>
-            </div>
-        </div>
-        </div>
-
-        {/* Mobile menu */}
-        <div
-        className={`${
-            isMenuOpen ? "block animate-slide-down" : "hidden"
-        } md:hidden`}
-        >
-        <div className="px-4 pt-4 pb-5 space-y-2 bg-white shadow-lg rounded-lg">
-            {["home", "about", "skills", "projects", "contact"].map(
-            (section) => (
-                <a
-                key={section}
-                href={`#${section}`}
-                className={`block px-4 py-3 rounded-lg text-lg font-semibold transition-all duration-300 ease-in-out ${
-                    activeSection === section
-                    ? "bg-gradient-to-r from-green-400 to-teal-500 text-white shadow-md"
-                    : "text-gray-800 hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500 hover:text-white hover:shadow-md transform hover:scale-105"
-                }`}
-                onClick={() => {
-                    setActiveSection(section);
-                    setIsMenuOpen(false);
-                }}
-                >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-                </a>
-            )
-            )}
-        </div>
-        </div>
-    </header>
-
-      {/* Footer */}
-    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-        <motion.div
-            className="flex flex-col md:flex-row justify-between items-center"
+    <section id="projects" className="py-16 bg-gray-100  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+    <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+        My Projects
+        </h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
+            <motion.div
+            key={project.id}
+            className="bg-white p-6 rounded-xl shadow-lg transform transition duration-500 hover:scale-105"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-            {/* Brand Name */}
-            <div className="mb-6 md:mb-0 text-center md:text-left">
-            <h3 className="text-3xl font-extrabold tracking-wide text-white">
-                Joshi Sujal
-            </h3>
-            <p className="mt-2 text-gray-400 text-lg">Full Stack Developer</p>
-            </div>
-
-            {/* Social Icons */}
-            <motion.div
-            className="flex space-x-6 mb-4 md:mb-0"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             >
-            {[
-                { icon: FaGithub, link: "#", color: "hover:text-gray-300" },
-                { icon: FaLinkedin, link: "#", color: "hover:text-blue-400" },
-                { icon: FaEnvelope, link: "#", color: "hover:text-red-400" },
-            ].map(({ icon: Icon, link, color }, index) => (
-                <motion.a
-                key={index}
-                href={link}
-                className={`text-gray-400 ${color} transition-colors`}
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
+            <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
+            <p className="text-gray-600 text-sm mt-2">{project.description}</p>
+            <div className="flex flex-wrap gap-2 mt-3">
+                {project.techStack.map((tech, index) => (
+                <span
+                    key={index}
+                    className="px-2 py-1 text-xs font-semibold bg-gray-200 text-gray-700 rounded"
                 >
-                <Icon className="h-7 w-7" />
-                </motion.a>
-            ))}
+                    {tech}
+                </span>
+                ))}
+            </div>
+            <div className="mt-4 flex items-center space-x-4">
+                <a
+                href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 flex items-center hover:text-blue-700"
+                >
+                Live Demo <FaExternalLinkAlt className="ml-1" />
+                </a>
+                <a
+                href={project.sourceCode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 flex items-center hover:text-gray-900"
+                >
+                Source Code <FaGithub className="ml-1" />
+                </a>
+            </div>
             </motion.div>
-
-            {/* Copyright */}
-            <p className="text-gray-400 text-sm md:text-base">
-            © {new Date().getFullYear()} Sujal Joshi. All rights reserved.
-            </p>
-        </motion.div>
+        ))}
         </div>
-    </footer>
-    </>
+    </div>
+    </section>
 );
 };
 
