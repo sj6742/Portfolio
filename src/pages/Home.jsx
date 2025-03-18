@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import logo1 from "../assets/project-1.jpg";
 import logo2 from "../assets/project-2.jpg";
 import logo3 from "../assets/project-3.jpg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
 const projects = [
@@ -441,12 +441,12 @@ function Home() {
                 integration <br />
                 ✅ A real-time chat application for seamless messaging <br />
                 ✅ An Imagify Website with 3D Image generation using AI <br />
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="text-white font-semibold underline hover:text-gray-300 transition duration-300 block mt-2"
                 >
                   🔗 View All Projects
-                </a>
+                </Link>
                 <b className="text-gray-800 text-justify ">📌 Why Me? </b>{" "}
                 <br />I believe in writing clean, efficient, and scalable code.
                 I’m always eager to learn new technologies and improve my
