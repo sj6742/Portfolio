@@ -12,7 +12,7 @@ import logo4 from "../assets/snake.jpg";
 // import { source } from "framer-motion/m";
 
 const projects = [
-  {
+{
     id: 1,
     title: "Quick Chat",
     description:
@@ -31,7 +31,6 @@ const projects = [
     image: logo3,
     category: "Responsive",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
-    // demoLink: "https://github.com/sj6742/Imgify",
     sourceCode: "https://github.com/sj6742",
 },
 {
@@ -42,7 +41,6 @@ const projects = [
     image: logo2,
     category: "Web App",
     techStack: ["HTML", "CSS", "JS"],
-    // demoLink: "https://github.com/sj6742",
     sourceCode: "https://github.com/sj6742",
 },
 {
@@ -53,7 +51,6 @@ const projects = [
     image: logo6,
     category: "Responsive",
     techStack: ["React.js,Tailwind CSS, HTML & CSS, JavaScript, JsPDF"],
-    // demoLink: "resume-builder-two-theta.vercel.app",
     sourceCode: "https://github.com/sj6742/Resume-Builder",
 },
 {
@@ -63,7 +60,6 @@ const projects = [
     "The Snake Water Gun game is a simple two-player game, similar to Rock-Paper-Scissors. It is often played between a player and the computer.",
     image: logo4,
     techStack: ["PYTHON"],
-    // demoLink: "https://github.com/sj6742/Snake-Water-Gun-game",
     sourceCode: "https://github.com/sj6742/Snake-Water-Gun-game",
 },
 {
@@ -73,7 +69,6 @@ const projects = [
     "A Python-based interactive quiz application that tests users' knowledge with multiple-choice questions and tracks their score.",
     image: logo5,
     techStack: ["PYTHON"],
-    // demoLink: "https://github.com/sj6742/Quiz",
     sourceCode: "https://github.com/sj6742/Quiz",
 },
 
@@ -84,7 +79,6 @@ const projects = [
     "A fun Python-based number guessing game that challenges players to find the perfect guess!",
     image: logo7,
     techStack: ["PYTHON"],
-    // demoLink: "https://github.com/sj6742/The-Perfet-Guuss",
     sourceCode: "https://github.com/sj6742/The-Perfet-Guuss",
 },
 {
