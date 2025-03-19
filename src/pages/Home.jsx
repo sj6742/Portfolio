@@ -687,8 +687,8 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* Projects Section */}
 
+      {/* Projects Section */}
       <section
         id="projects"
         className="py-16 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white"
@@ -822,6 +822,7 @@ function Home() {
             transition={{ duration: 0.5 }}
           >
             <div className="grid grid-cols-1 md:grid-cols-2">
+              
               {/* Contact Information - Hidden on small screens */}
               <div className="hidden md:block p-8 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
                 <h3 className="text-2xl font-bold mb-4">Contact Information</h3>

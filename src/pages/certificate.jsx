@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaTimes } from "react-icons/fa"; // Font Awesome Close Icon
-
+import { FaTimes } from "react-icons/fa"; 
 const Certificates = () => {
 const [selectedCert, setSelectedCert] = useState(null);
 
@@ -125,7 +124,6 @@ return (
         ))}
     </div>
 
-      {/* Full Image Modal */}
     <AnimatePresence>
         {selectedCert && (
         <motion.div
@@ -135,15 +133,13 @@ return (
             exit={{ opacity: 0 }}
         >
             <div className="relative w-4/5 md:w-2/3 lg:w-1/2">
-              {/* Close Button */}
             <button
                 className="absolute top-4 right-4 bg-[#0f1216] text-white p-2 rounded-full hover:bg-gray-600 transition"
                 onClick={() => setSelectedCert(null)}
             >
-                <FaTimes size={24} /> {/* Font Awesome Close Icon */}
+                <FaTimes size={24} /> 
             </button>
 
-              {/* Full Image */}
             <motion.img
                 src={selectedCert.image}
                 alt={selectedCert.title}

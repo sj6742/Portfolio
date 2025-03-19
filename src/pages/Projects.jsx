@@ -8,6 +8,8 @@ import logo3 from "../assets/project-3.jpg";
 import logo5 from "../assets/Quize.jpg";
 import logo6 from "../assets/Resume.jpg";
 import logo4 from "../assets/snake.jpg";
+import { image, title } from "framer-motion/client";
+import { source } from "framer-motion/m";
 
 const projects = [
   {
@@ -29,7 +31,7 @@ const projects = [
     image: logo3,
     category: "Responsive",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
-    demoLink: "https://github.com/sj6742/Imgify",
+    // demoLink: "https://github.com/sj6742/Imgify",
     sourceCode: "https://github.com/sj6742",
 },
 {
@@ -40,7 +42,7 @@ const projects = [
     image: logo2,
     category: "Web App",
     techStack: ["HTML", "CSS", "JS"],
-    demoLink: "https://github.com/sj6742",
+    // demoLink: "https://github.com/sj6742",
     sourceCode: "https://github.com/sj6742",
 },
 {
@@ -51,7 +53,7 @@ const projects = [
     image: logo6,
     category: "Responsive",
     techStack: ["React.js,Tailwind CSS, HTML & CSS, JavaScript, JsPDF"],
-    demoLink: "resume-builder-two-theta.vercel.app",
+    // demoLink: "resume-builder-two-theta.vercel.app",
     sourceCode: "https://github.com/sj6742/Resume-Builder",
 },
 {
@@ -60,9 +62,8 @@ const projects = [
     description:
     "The Snake Water Gun game is a simple two-player game, similar to Rock-Paper-Scissors. It is often played between a player and the computer.",
     image: logo4,
-    category: "Responsive",
     techStack: ["PYTHON"],
-    demoLink: "https://github.com/sj6742/Snake-Water-Gun-game",
+    // demoLink: "https://github.com/sj6742/Snake-Water-Gun-game",
     sourceCode: "https://github.com/sj6742/Snake-Water-Gun-game",
 },
 {
@@ -71,9 +72,8 @@ const projects = [
     description:
     "A Python-based interactive quiz application that tests users' knowledge with multiple-choice questions and tracks their score.",
     image: logo5,
-    category: "Responsive",
     techStack: ["PYTHON"],
-    demoLink: "https://github.com/sj6742/Quiz",
+    // demoLink: "https://github.com/sj6742/Quiz",
     sourceCode: "https://github.com/sj6742/Quiz",
 },
 
@@ -83,11 +83,19 @@ const projects = [
     description:
     "A fun Python-based number guessing game that challenges players to find the perfect guess!",
     image: logo7,
-    category: "Responsive",
     techStack: ["PYTHON"],
-    demoLink: "https://github.com/sj6742/The-Perfet-Guuss",
+    // demoLink: "https://github.com/sj6742/The-Perfet-Guuss",
     sourceCode: "https://github.com/sj6742/The-Perfet-Guuss",
 },
+{
+    id: 8,
+    title: " JARVIS – Your Intelligent AI Assistant",
+    description:
+    "JARVIS is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
+    image: "jarvis.jpg",
+    techStack:["PYTHON"],
+    sourceCode: "https://github.com/sj6742/JARVIS"
+}
 ];
 
 const Projects = () => {
