@@ -8,8 +8,8 @@ import logo3 from "../assets/project-3.jpg";
 import logo5 from "../assets/Quize.jpg";
 import logo6 from "../assets/Resume.jpg";
 import logo4 from "../assets/snake.jpg";
-import { image, title } from "framer-motion/client";
-import { source } from "framer-motion/m";
+// import { image, title } from "framer-motion/client";
+// import { source } from "framer-motion/m";
 
 const projects = [
   {
