@@ -8,46 +8,43 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import logo1 from "../assets/project-1.jpg";
-import logo2 from "../assets/project-2.jpg";
-import logo3 from "../assets/project-3.jpg";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
+import logo1 from "../assets/project-1.jpg";
 
 const projects = [
   {
     id: 1,
     title: "Quick Chat",
     description:
-      "A real-time chat application is a web or mobile-based platform that enables users to send and receive messages instantly. It is designed for seamless communication with minimal delays, allowing for interactive conversations between individuals or groups.",
+    "A real-time chat application is a web or mobile-based platform that enables users to send and receive messages instantly. It is designed for seamless communication with minimal delays, allowing for interactive conversations between individuals or groups.",
     image: logo1,
     category: "Responsive",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
     demoLink: "https://quick-chat-p1nn.onrender.com",
     sourceCode: "https://github.com/sj6742/Quick-Chat.git",
-  },
-  {
+},
+{
     id: 2,
-    title: "Imagify",
+    title: "SkyCast",
     description:
-      "A prompt-generated 3D image is a digital artwork created using AI models that interpret text descriptions to generate 3D-like visuals. These models use advanced algorithms to render depth, lighting, and perspective, producing realistic or stylized 3D effects based on the given input. This technology is widely used in game design, architecture, and creative arts. ",
-    image: logo3,
+    "SkyCast is a sleek weather app providing real-time forecasts, temperature trends, and climate insights. is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
+    image: "skycast.jpg",
     category: "Responsive",
-    techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
-    demoLink: "https://github.com/sj6742/Imgify",
-    sourceCode: "https://github.com/sj6742",
-  },
-  {
+    techStack:["HTML","TAILWIND"," CSS","JAVA SCRIPT","REACT"],
+    demoLink: "https://skycast-nine.vercel.app/",
+    sourceCode: "https://github.com/sj6742/SkyCast"
+},
+{
     id: 3,
-    title: "Pelican Bookstore",
+    title: " JARVIS – Your Intelligent AI Assistant",
     description:
-      "BookStore is a modern online platform designed for book enthusiasts to explore, purchase, and review a vast collection of books across various genres. Whether you're a fan of fiction, non-fiction, fantasy, or self-development, BookStore offers an intuitive browsing experience with personalized recommendations and seamless navigation.",
-    image: logo2,
-    category: "Web App",
-    techStack: ["HTML", "CSS", "JS"],
-    demoLink: "https://github.com/sj6742",
-    sourceCode: "https://github.com/sj6742",
-  },
+    "JARVIS is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
+    image: "jarvis.jpg",
+    category: "Responsive",
+    techStack:["PYTHON"],
+    sourceCode: "https://github.com/sj6742/JARVIS"
+},
 ];
 
 function Home() {

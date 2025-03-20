@@ -25,6 +25,26 @@ const projects = [
 },
 {
     id: 2,
+    title: "SkyCast",
+    description:
+    "SkyCast is a sleek weather app providing real-time forecasts, temperature trends, and climate insights. is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
+    image: "skycast.jpg",
+    techStack:["HTML","TAILWIND"," CSS","JAVA SCRIPT","REACT"],
+    demoLink: "https://skycast-nine.vercel.app/",
+    sourceCode: "https://github.com/sj6742/SkyCast"
+},
+{
+    id: 3,
+    title: " JARVIS – Your Intelligent AI Assistant",
+    description:
+    "JARVIS is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
+    image: "jarvis.jpg",
+    techStack:["PYTHON"],
+    sourceCode: "https://github.com/sj6742/JARVIS"
+},
+
+{
+    id: 4,
     title: "Imagify",
     description:
     "A prompt-generated 3D image is a digital artwork created using AI models that interpret text descriptions to generate 3D-like visuals. These models use advanced algorithms to render depth, lighting, and perspective, producing realistic or stylized 3D effects based on the given input. This technology is widely used in game design, architecture, and creative arts. ",
@@ -34,7 +54,7 @@ const projects = [
     sourceCode: "https://github.com/sj6742",
 },
 {
-    id: 3,
+    id: 5,
     title: "Pelican Bookstore",
     description:
     "BookStore is a modern online platform designed for book enthusiasts to explore, purchase, and review a vast collection of books across various genres. Whether you're a fan of fiction, non-fiction, fantasy, or self-development, BookStore offers an intuitive browsing experience with personalized recommendations and seamless navigation.",
@@ -44,7 +64,7 @@ const projects = [
     sourceCode: "https://github.com/sj6742",
 },
 {
-    id: 4,
+    id: 6,
     title: "Resume-Builder",
     description:
     "An intuitive React-based resume builder for creating professional resumes effortlessly.",
@@ -54,7 +74,7 @@ const projects = [
     sourceCode: "https://github.com/sj6742/Resume-Builder",
 },
 {
-    id: 5,
+    id: 7,
     title: "Snake Water Gun Game",
     description:
     "The Snake Water Gun game is a simple two-player game, similar to Rock-Paper-Scissors. It is often played between a player and the computer.",
@@ -63,7 +83,7 @@ const projects = [
     sourceCode: "https://github.com/sj6742/Snake-Water-Gun-game",
 },
 {
-    id: 6,
+    id: 8,
     title: "Python Quiz ",
     description:
     "A Python-based interactive quiz application that tests users' knowledge with multiple-choice questions and tracks their score.",
@@ -73,7 +93,7 @@ const projects = [
 },
 
 {
-    id: 7,
+    id: 9,
     title: "The-Perfet-Guuss.",
     description:
     "A fun Python-based number guessing game that challenges players to find the perfect guess!",
@@ -81,15 +101,7 @@ const projects = [
     techStack: ["PYTHON"],
     sourceCode: "https://github.com/sj6742/The-Perfet-Guuss",
 },
-{
-    id: 8,
-    title: " JARVIS – Your Intelligent AI Assistant",
-    description:
-    "JARVIS is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
-    image: "jarvis.jpg",
-    techStack:["PYTHON"],
-    sourceCode: "https://github.com/sj6742/JARVIS"
-}
+
 ];
 
 const Projects = () => {
