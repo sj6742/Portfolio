@@ -50,6 +50,7 @@ const projects = [
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+
   // Handle scroll and update active section
   useEffect(() => {
     const handleScroll = () => {

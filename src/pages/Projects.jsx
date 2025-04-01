@@ -70,7 +70,7 @@ const projects = [
     "An intuitive React-based resume builder for creating professional resumes effortlessly.",
     image: logo6,
     category: "Responsive",
-    techStack: ["React.js,Tailwind CSS, HTML & CSS, JavaScript, JsPDF"],
+    techStack: ["React.js","Tailwind CSS", "HTML & CSS","JavaScript", "JsPDF"],
     sourceCode: "https://github.com/sj6742/Resume-Builder",
 },
 {
@@ -79,7 +79,7 @@ const projects = [
     description:
     "The Snake Water Gun game is a simple two-player game, similar to Rock-Paper-Scissors. It is often played between a player and the computer.",
     image: logo4,
-    techStack: ["PYTHON"],
+    techStack: ["PYTHON","TKINTER"],
     sourceCode: "https://github.com/sj6742/Snake-Water-Gun-game",
 },
 {
@@ -88,7 +88,7 @@ const projects = [
     description:
     "A Python-based interactive quiz application that tests users' knowledge with multiple-choice questions and tracks their score.",
     image: logo5,
-    techStack: ["PYTHON"],
+    techStack: ["PYTHON","COLORAMA"],
     sourceCode: "https://github.com/sj6742/Quiz",
 },
 
