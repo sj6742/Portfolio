@@ -17,34 +17,34 @@ const projects = [
     id: 1,
     title: "Quick Chat",
     description:
-    "A real-time chat application is a web or mobile-based platform that enables users to send and receive messages instantly. It is designed for seamless communication with minimal delays, allowing for interactive conversations between individuals or groups.",
+      "A real-time chat application is a web or mobile-based platform that enables users to send and receive messages instantly. It is designed for seamless communication with minimal delays, allowing for interactive conversations between individuals or groups.",
     image: logo1,
     category: "Responsive",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
     demoLink: "https://quick-chat-p1nn.onrender.com",
     sourceCode: "https://github.com/sj6742/Quick-Chat.git",
-},
-{
+  },
+  {
     id: 2,
     title: "SkyCast",
     description:
-    "SkyCast is a sleek weather app providing real-time forecasts, temperature trends, and climate insights. is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
+      "SkyCast is a sleek weather app providing real-time forecasts, temperature trends, and climate insights. is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
     image: "skycast.jpg",
     category: "Responsive",
-    techStack:["HTML","TAILWIND"," CSS","JAVA SCRIPT","REACT"],
+    techStack: ["HTML", "TAILWIND", " CSS", "JAVA SCRIPT", "REACT"],
     demoLink: "https://skycast-nine.vercel.app/",
-    sourceCode: "https://github.com/sj6742/SkyCast"
-},
-{
+    sourceCode: "https://github.com/sj6742/SkyCast",
+  },
+  {
     id: 3,
     title: " JARVIS – Your Intelligent AI Assistant",
     description:
-    "JARVIS is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
+      "JARVIS is an advanced AI assistant designed to automate tasks, process data, and enhance user interactions with intelligent responses.",
     image: "jarvis.jpg",
     category: "Responsive",
-    techStack:["PYTHON"],
-    sourceCode: "https://github.com/sj6742/JARVIS"
-},
+    techStack: ["PYTHON"],
+    sourceCode: "https://github.com/sj6742/JARVIS",
+  },
 ];
 
 function Home() {
@@ -90,17 +90,34 @@ function Home() {
     e.preventDefault();
     setStatus("Sending...");
 
-    try {
-      const response = await fetch("http://localhost:5000/send-email", {
+    // try {
+    //   const response = await fetch("http://localhost:5000/send-email", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(formData),
+    //   });
+
+    //   const data = await response.json();
+    //   if (response.ok) {
+    //     setStatus("Message sent successfully!");
+    //     setFormData({ name: "", email: "", subject: "", message: "" });
+    //   } else {
+    //     setStatus(data.error || "Failed to send message.");
+    //   }
+    // } catch (error) {
+    //   setStatus("Error: Could not send message.");
+    // }
+    try{
+      const response = await fetch("http://localhost:5000/send-email",{
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {"Content-type": "application/json"},
         body: JSON.stringify(formData),
       });
 
       const data = await response.json();
       if (response.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", subject: "", message: "" });
+        setStatus("Message sent sucessfully!");
+        setFormData({name: "", email:"", subject:"", message: "" });
       } else {
         setStatus(data.error || "Failed to send message.");
       }
@@ -464,8 +481,8 @@ function Home() {
                   {
                     label: "Certificate",
                     value: (
-                      <Link 
-                        to="/certificate" 
+                      <Link
+                        to="/certificate"
                         className="inline-block bg-yellow-500 text-white px-6 py-2 rounded-md text-center hover:bg-yellow-600 transition-all duration-300 shadow-md"
                       >
                         📜 View Certificate
@@ -475,15 +492,14 @@ function Home() {
                   {
                     label: "Work Experience",
                     value: (
-                      <Link 
-                        to="/work" 
+                      <Link
+                        to="/work"
                         className="inline-block bg-yellow-400 text-white px-6 py-2 rounded-md text-center hover:bg-yellow-500 transition-all duration-300 shadow-md"
                       >
                         💼 View Work Experience
                       </Link>
                     ),
                   },
-                  
                 ].map((info, index) => (
                   <div key={index}>
                     <p className="text-white font-medium">{info.label}:</p>
@@ -820,7 +836,6 @@ function Home() {
             transition={{ duration: 0.5 }}
           >
             <div className="grid grid-cols-1 md:grid-cols-2">
-              
               {/* Contact Information - Hidden on small screens */}
               <div className="hidden md:block p-8 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
                 <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
